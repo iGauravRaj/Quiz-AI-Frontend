@@ -1,6 +1,5 @@
-const API_BASE_URL = "http://localhost:5000/api";
-// const API_BASE_URL = "http://localhost:5000/api";
-// const API_BASE_URL = "https://backend-kahoot-3.onrender.com/api";
+const API_BASE_URL = "https://quiz-ai-backend-wvsh.onrender.com/api";
+
 export const AI_URL =
   "https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=AIzaSyC-hpG2iOKwUxIgDCjN3oW4KOdght6NGcM";
 
@@ -11,7 +10,6 @@ const handleResponse = async (response) => {
     throw new Error(error.message || "Something went wrong");
   }
   const responseData = await response.json();
-  console.log(responseData);
   return responseData;
 };
 
