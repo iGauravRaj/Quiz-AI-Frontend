@@ -1,0 +1,180 @@
+.ai-generator-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-generator-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ai-generator-header h1 {
+  font-size: 2.5rem;
+  color: #46178f;
+  margin-bottom: 10px;
+}
+
+.ai-generator-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.ai-generator-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-container {
+  margin-bottom: 24px;
+}
+
+.prompt-container label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.prompt-container textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.prompt-container textarea:focus {
+  border-color: #46178f;
+  outline: none;
+}
+
+.prompt-container textarea::placeholder {
+  color: #aaa;
+}
+
+.examples {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+}
+
+.examples h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #46178f;
+}
+
+.examples ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.examples li {
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #e6e0f0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.examples li:hover {
+  background-color: #d1c2e6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.generate-btn,
+.cancel-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.generate-btn {
+  background-color: #46178f;
+  color: white;
+  border: none;
+}
+
+.generate-btn:hover {
+  background-color: #35106d;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background-color: #eee;
+}
+
+.generation-progress {
+  margin-top: 30px;
+}
+
+.progress-bar {
+  height: 12px;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #46178f;
+  transition: width 0.5s ease;
+}
+
+.generation-progress p {
+  text-align: center;
+  font-weight: 500;
+  color: #46178f;
+}
+
+@media (max-width: 768px) {
+  .ai-generator-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .ai-generator-header p {
+    font-size: 1rem;
+  }
+
+  .ai-generator-form {
+    padding: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .generate-btn,
+  .cancel-btn {
+    width: 100%;
+  }
+}
+
